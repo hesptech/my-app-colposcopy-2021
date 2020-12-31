@@ -9,21 +9,7 @@
 
 
 
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    span {
-      padding: 0 10px;
-    }
-  }
+
 
   .toolbar img {
     margin: 0 16px;
@@ -55,14 +41,28 @@
   }
 
   a:hover {
-    color: #125699;
+    color: #393d41;
   }
 
-
+  .active {
+    color: #f80b0b;
+    text-decoration: underline;
+  }
 
   .menu-top {
     padding: 0 10px;
   }  
+
+  // material toolbar
+  .mat-toolbar {
+    .spacer {
+      flex: 1 1 auto;
+    }
+  
+    span {
+      padding: 0 10px;
+    }
+  }
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
