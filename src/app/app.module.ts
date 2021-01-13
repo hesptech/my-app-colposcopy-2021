@@ -22,7 +22,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 import { UserCodeDialogComponent } from './users/user-code-dialog/user-code-dialog.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -33,7 +36,9 @@ import { UserCodeDialogComponent } from './users/user-code-dialog/user-code-dial
     UsersDataComponent,
     TestComponent,
     TestsComponent,
-    UserCodeDialogComponent
+    UserCodeDialogComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +57,7 @@ import { UserCodeDialogComponent } from './users/user-code-dialog/user-code-dial
     MatListModule,
     MatDialogModule,
     MatButtonModule,
+    MatCardModule,
     FlexLayoutModule
   ],
   providers: [],
