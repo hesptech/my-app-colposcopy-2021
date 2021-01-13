@@ -20,7 +20,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { MatDialogModule } from '@angular/material/dialog';
+import { UserCodeDialogComponent } from './users/user-code-dialog/user-code-dialog.component';
 
 
 @NgModule({
@@ -30,7 +32,8 @@ import {MatListModule} from '@angular/material/list';
     UsersCodesComponent,
     UsersDataComponent,
     TestComponent,
-    TestsComponent
+    TestsComponent,
+    UserCodeDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -47,10 +50,12 @@ import {MatListModule} from '@angular/material/list';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatDialogModule,
     MatButtonModule,
     FlexLayoutModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [UserCodeDialogComponent]
 })
 export class AppModule { }

@@ -30,4 +30,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## npm installs
 
+ng add @angular/material
+
 npm i @angular/flex-layout
+
+ng g c users/user-code-dialog
+
+ng g s common/store
