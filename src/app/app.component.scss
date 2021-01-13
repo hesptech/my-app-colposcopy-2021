@@ -1,5 +1,14 @@
 // material toolbar
 .mat-toolbar {
+
+  a:hover {
+    color: #8aa0b6;
+  }
+
+  .active {
+    text-decoration: underline;
+  }
+
   .spacer {
     flex: 1 1 auto;
   }

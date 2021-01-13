@@ -5,8 +5,8 @@
       <button mat-icon-button>
         <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
       </button>
-
-        <a mat-button routerLink="/" >Home</a>
+      <h1>Colposcopy 2021</h1>
+        <a mat-button routerLink="/" routerLinkActive="active"  [routerLinkActiveOptions]="{exact: true}">Home</a>
         <a mat-button routerLink="/users-codes" routerLinkActive="active">Users Codes</a>
         <a mat-button routerLink="/users-data" routerLinkActive="active">Users Data</a>
         <a mat-button routerLink="/test" routerLinkActive="active">Test</a>
